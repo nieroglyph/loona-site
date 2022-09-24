@@ -16,6 +16,7 @@ body {
   width: 100%;
   margin: 0;
   font-family: loonaFont3;
+  background-color: #F9F9F9;
 }
 
 /* header */
@@ -69,7 +70,7 @@ body {
     background-color: #00000010;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.763);
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 /* home text */
 .members {
@@ -168,8 +169,16 @@ body {
 }
 /* bg movie */
 
-.details {
-    height: 200px;
+.social {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.social img {
+    width: 30px;
+    height: 30px;
 }
 
 /* footer */
@@ -180,7 +189,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #252526;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
 }
 .footer a {
@@ -192,8 +201,12 @@ body {
 /* hover */
 .header .links a:hover {
     background-color: #3d3b3b20;
+    transition: background-color 0.2s ease-in-out;
 }
 
+.members span:hover {
+    transition: background-color 0.2s ease;
+}
 #Heejin:hover {
     background-color: #E03974;
     color: white;
@@ -253,6 +266,11 @@ body {
     background-color: #252526;
     color: white;
     cursor: pointer;
+}
+
+.social img:hover {
+    margin-top: -5px;
+    transition: margin 0.2s ease-in-out;
 }
 
 .footer a:hover {
