@@ -37,10 +37,13 @@ body {
   color: black;
   font-size: 16px;
   font-family: loonaFont;
+  padding: 5px;
 }
 .header .links {
   display: flex;
-  gap: 20px;
+}
+.logo {
+    padding: 0;
 }
 /* header */
 
@@ -187,6 +190,9 @@ body {
 /* footer */
 
 /* hover */
+.header .links a:hover {
+    background-color: #3d3b3b20;
+}
 
 #Heejin:hover {
     background-color: #E03974;
