@@ -24,27 +24,24 @@ body {
   width: 175px;
   height: 35px;
   padding-top: 7px;
+  object-fit: fill;
 }
 .header {
   height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 200px;
+  max-width: 100%;
+
 }
 .header a {
   text-decoration: none;
   color: black;
   font-size: 16px;
   font-family: loonaFont;
-  padding: 5px;
 }
 .header .links {
-  display: flex;
+
 }
 .logo {
-    padding: 0;
+
 }
 /* header */
 
@@ -129,12 +126,15 @@ body {
 /* home */
 
 .content {
-    height: 350px;
-    margin: 0 200px;
+    height: 120px;
+    max-width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 100px;
+    overflow: clip;
 }
 
 /* bg movie */
@@ -154,12 +154,14 @@ body {
 }
 .overlaytext {
     width: 600px;
-    min-width: 150px;
+    min-width: 1px;
+    max-height: 280px;
     display: flex;
     flex-direction: column;
     background-color:#00000060;
     padding: 50px 75px;
     text-align: justify;
+    overflow: overlay;
 }
 .overlaytext img, .overlaytext a {
     max-width: 100%;
@@ -176,7 +178,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 0 40px;
+    flex-wrap: wrap;
 }
 .social img {
     width: 30px;
